@@ -4,6 +4,9 @@
 
 **Oak & Amber** is a high-end Full-Stack E-commerce platform for luxury skincare, featuring a cutting-edge **RAG (Retrieval-Augmented Generation)** AI assistant named **AMBER**. The project showcases a modern architectural approach to combining traditional retail with advanced Semantic Search and Large Language Models.
 
+## 🌐 Live Server
+** The project is live at http://16.16.184.221/**
+
 ---
 
 ## 🚀 Tech Stack
@@ -68,11 +71,6 @@ Beyond keyword matching, I implemented true semantic search:
 3.  Start the development server: `npm run dev`.
 
 ---
-
-## 🌐 Deployment
-* **Frontend:** [Link to your hosting]
-* **Backend:** [PLACEHOLDER: AWS Server Link - To be updated after deployment]
-
----
 **Developed by Linoy Sahalo - 2026**
+
 
