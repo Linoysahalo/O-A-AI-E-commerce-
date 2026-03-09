@@ -51,8 +51,8 @@ Beyond keyword matching, I implemented true semantic search:
 
 | | |
 | :---: | :---: |
-| ![01](./screenshots/01.png) | ![02](./screenshots/02.png) |
-| ![03](./screenshots/03.png) | ![04](./screenshots/04.png) |
+| ![01](./screenshots/01.png) | ![02](./screenshots/03.png) |
+| ![03](./screenshots/02.png) | ![04](./screenshots/04.png) |
 *(Refer to the `/screenshots` directory for full-resolution images)*
 
 ---
@@ -72,6 +72,7 @@ Beyond keyword matching, I implemented true semantic search:
 
 ---
 **Developed by Linoy Sahalo - 2026**
+
 
 
 
