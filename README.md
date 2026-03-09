@@ -15,6 +15,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/Groq_Llama_3.3-black?style=for-the-badge&logo=openai&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-FFD21E?style=for-the-badge&logoColor=black)
 
 * **Frontend:** React 19 (Vite), Axios, and React Router 7.
 * **Backend:** Python Flask REST API.
@@ -74,3 +75,4 @@ Beyond keyword matching, I implemented true semantic search:
 
 ---
 **Developed by Linoy Sahalo - 2026**
+
