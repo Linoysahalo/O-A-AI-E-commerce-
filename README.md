@@ -49,9 +49,7 @@ Beyond keyword matching, I implemented true semantic search:
 
 ## 📸 System Previews
 
-| Homepage Interface | AMBER AI Consultant (RAG) | Product Catalog |
-| :--- | :--- | :--- |
-| ![Homepage](./screenshots/01.png) | ![Chat UI](./screenshots/02.png) | ![Products](./screenshots/03.png) |
+| (./screenshots/01.png) | (./screenshots/02.png) | (./screenshots/03.png) |
 
 *(Refer to the `/screenshots` directory for full-resolution images)*
 
@@ -72,6 +70,7 @@ Beyond keyword matching, I implemented true semantic search:
 
 ---
 **Developed by Linoy Sahalo - 2026**
+
 
 
 
