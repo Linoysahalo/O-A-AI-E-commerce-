@@ -1,0 +1,258 @@
+.chat-consultant {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 380px;
+  height: 450px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Assistant', sans-serif;
+  overflow: hidden;
+  z-index: 1000;
+  border: 1px solid #eee;
+  transition: height 0.3s ease, width 0.3s ease;
+}
+
+.chat-consultant.closed {
+  height: 55px;
+  width: 250px;
+}
+
+.chat-header {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chat-header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.toggle-icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.response-area {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  direction: rtl;
+}
+
+.message-wrapper { display: flex; width: 100%; }
+.message-wrapper.user { justify-content: flex-start; }
+.message-wrapper.assistant { justify-content: flex-end; }
+.chat-bubble { max-width: 85%; padding: 2px 14px; font-size: 0.92rem; border-radius: 15px; }
+.user .chat-bubble { background: #000; color: #fff; border-radius: 15px 15px 0 15px; }
+.assistant .chat-bubble { background: #f0f0f0; color: #333; border-radius: 15px 15px 15px 0; border: 1px solid #e5e5e5; }
+
+.mini-products-grid { display: flex; gap: 8px; margin-top: 10px; overflow-x: auto; padding-bottom: 5px; }
+.amber-mini-card { width: 90px; height: 110px; background: white; border-radius: 8px; border: 1px solid #ddd; overflow: hidden; flex-shrink: 0; }
+.amber-mini-card img { width: 100%; height: 70%; object-fit: cover; }
+.mini-card-details { padding: 4px 6px; display: flex; justify-content: space-between; align-items: center; }
+.mini-brand { font-size: 9px; font-weight: bold; color: #666; text-transform: uppercase; }
+.mini-add-btn { background: #000; color: white; border: none; width: 18px; height: 18px; border-radius: 50%; cursor: pointer; }
+
+.input-area { display: flex; padding: 12px; border-top: 1px solid #eee; gap: 8px; background: white; }
+.input-area input { flex-grow: 1; padding: 10px 15px; border: 1px solid #eee; border-radius: 20px; outline: none; font-size: 0.9rem; }
+.input-area button { background-color: #000; color: white; border: none; padding: 0 18px; border-radius: 20px; cursor: pointer; font-weight: bold; }
+
+.mini-products-grid {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  overflow-x: auto;
+  padding: 5px;
+  scrollbar-width: none;
+}
+
+.amber-product-card {
+  width: 170px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.card-image-box {
+  width: 100%;
+  height: 140px;
+  position: relative;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.card-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px;
+  transform: scale(1.15);
+}
+
+.card-wishlist-btn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: #ff4d4d;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.card-data-box {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: right;
+}
+
+.card-brand {
+  font-size: 10px;
+  color: #aaa;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-name {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+  height: 34px;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-price-container {
+  margin: 4px 0;
+}
+
+.card-price {
+  font-size: 15px;
+  font-weight: 800;
+  color: #000;
+}
+
+.card-add-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 5px;
+  transition: opacity 0.2s;
+}
+
+.card-add-btn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+  .chat-consultant {
+    right: 10px;
+    bottom: 10px;
+    width: calc(100% - 20px);
+    height: 80vh;
+    max-height: 550px;
+    border-radius: 20px 20px 12px 12px;
+  }
+
+  .chat-consultant.closed {
+    width: 200px;
+    height: 50px;
+  }
+
+  .chat-header {
+    padding: 12px 15px;
+  }
+
+  .chat-header h3 {
+    font-size: 0.85rem;
+  }
+
+
+  .chat-bubble {
+    max-width: 90%;
+    font-size: 0.88rem;
+    padding: 8px 12px;
+  }
+
+
+  .amber-product-card {
+    width: 145px;
+  }
+
+  .card-image-box {
+    height: 110px;
+  }
+
+  .card-name {
+    font-size: 11px;
+    height: 30px;
+  }
+
+  .input-area {
+    padding: 8px 10px;
+  }
+
+  .input-area input {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  .input-area button {
+    padding: 0 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .chat-consultant {
+    width: calc(100% - 10px);
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .amber-product-card {
+    width: 130px;
+  }
+}

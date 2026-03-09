@@ -1,0 +1,271 @@
+.checkout-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  direction: rtl;
+  font-family: assistant;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.cart-item-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  min-height: 100px;
+}
+
+.cart-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item-info-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.item-info-wrapper .brand-name {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.item-info-wrapper .full-name {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.2;
+}
+
+.item-info-wrapper .item-desc {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.2;
+}
+
+.cart-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  min-width: 130px;
+  text-align: center;
+}
+
+.cart-summary p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+  font-size: 14px;
+  color: #333;
+}
+
+.quantity-control {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.quantity-control button {
+  padding: 1px 10px;
+  border: 1px solid #ddd;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.remove-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.remove-icon:hover {
+  opacity: 1;
+}
+
+.cart-total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* --- שאר ה-CSS המקורי שלך ללא שינוי --- */
+
+.checkout-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkout-form label {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Assistant', sans-serif !important;
+  text-align: right;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: #fdfdfd;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.total-display {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  border-top: 2px solid #eee;
+  padding-top: 1rem;
+}
+
+.submit-order-btn {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: assistant, sans-serif !important;
+}
+
+.submit-order-btn:hover {
+  background-color: #333;
+}
+
+.success-container {
+  text-align: center;
+  padding: 3rem;
+}
+
+.success-msg {
+  color: #2e7d32;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.back-home-btn {
+  background: black;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  font-family: assistant;
+}
+
+.auth-step {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fdfbf9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.auth-step h3 {
+  font-family: 'Assistant', sans-serif;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+
+.auth-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.auth-options button {
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-family: inherit;
+}
+
+
+.login-btn {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.login-btn:hover {
+  background-color: #4a4a4a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.guest-btn {
+  background-color: transparent;
+  color: #555;
+  border: 2px solid #ddd !important;
+}
+
+.guest-btn:hover {
+  background-color: #eee;
+  border-color: #bbb !important;
+  color: #222;
+}
+
+@media (max-width: 480px) {
+  .auth-step {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .auth-step h3 {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,289 @@
+/* --- שאר ה-CSS שלך נשאר ללא שינוי --- */
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cart-item-info h5.brand-label {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.cart-item-info h4 {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.cart-item-info .cart-desc {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #777;
+  line-height: 1.1;
+}
+
+/* --- המשך ה-CSS המקורי שלך --- */
+.counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  width: fit-content;
+  margin-top: 4px;
+}
+
+.user-name-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Assistant', sans-serif;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: calc(100% + 15px);
+  right: 0;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: right;
+}
+
+.welcome-msg {
+  margin: 0 0 5px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.dropdown-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: right;
+  font-family: 'Assistant', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-btn:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.dropdown-btn.logout {
+  color: #ff4d4d;
+  margin-top: 5px;
+  border-top: 1px solid #f9f9f9;
+}
+
+.dropdown-btn.logout:hover {
+  background-color: #fff5f5;
+}
+
+.user-dropdown .dropdown-btn:only-child {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.user-dropdown .dropdown-btn:only-child:hover {
+  background-color: #333;
+}
+
+.navbar {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 147px;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+
+.left-icons,
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.cart-icon,
+.wishlist-icon,
+.user-icon,
+.search-icon {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: rgb(255, 129, 129);
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.cart-wrapper {
+  position: relative;
+}
+.cart-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: -210px;
+  text-align: right;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  padding: 12px;
+  z-index: 999;
+}
+.cart-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+.cart-dropdown-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.cart-item-info h4 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.cart-item-info p {
+  margin: 4px 0;
+  font-size: 0.8rem;
+  color: #555;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  width: fit-content;
+}
+.counter button {
+  background-color: #eee;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.counter span {
+  padding: 0 8px;
+}
+.cart-dropdown-actions p {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.cart-dropdown-actions a,
+.cart-dropdown-actions button {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 0;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  text-align: center;
+  font-family: assistant;
+
+}
+.cart-dropdown-actions a:hover,
+.cart-dropdown-actions button:hover {
+  background-color: #222;
+}
+.remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.remove-icon {
+  width: 16px !important;
+  height: 16px !important;
+  object-fit: contain;
+  display: block;
+  margin-right: 150%;
+}
+.remove-icon:hover {
+  opacity: 1;
+}
+.cart-items-container {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;
+  margin-bottom: 10px;
+  padding-left:20px;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    /* צמצום הפדינג הצדדי מ-20px ל-10px כדי למנוע חריגה מהמסך */
+    padding: 10px 10px;
+
+    /* מבטיח שהפדינג נספר בתוך הרווח של ה-100% ולא מוסיף עליו */
+    box-sizing: border-box;
+
+    /* מוודא שהנאבבר לא רחב יותר מרוחב המכשיר */
+    width: 100%;
+    max-width: 100vw;
+
+    /* שומר על המיקום שקבענו כדי שלא יהיה רווח מההדר */
+    top: 80px;
+  }
+
+  /* תיקון קטן לאייקונים כדי שלא יידבקו לקצוות */
+  .left-icons, .right-icons {
+    gap: 12px;
+  }
+}

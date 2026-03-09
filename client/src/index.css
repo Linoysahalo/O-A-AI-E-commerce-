@@ -1,0 +1,20 @@
+body, html {
+  overflow-x: hidden;
+  font-family: Assistant !important;
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  z-index: 9999;
+  font-size: 1rem;
+  font-family: assistant;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+

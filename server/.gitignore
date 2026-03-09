@@ -1,0 +1,47 @@
+# Python Environment
+.venv/
+env/
+venv/
+ENV/
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite
+*.json
+
+# Logs & Testing
+*.log
+logs/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+temp/
+
+# Node (if used)
+node_modules/
+npm-debug.log
+package-lock.json

@@ -1,0 +1,139 @@
+.wishlist-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: assistant;
+}
+
+.wishlist-title {
+  font-size: 2rem;
+  color: #222;
+  text-align: center;
+}
+
+.wishlist-empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.wishlist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.wishlist-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.wishlist-img {
+  width: 100px; /* הגדלתי מעט כדי שיתאים לשם המלא */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.wishlist-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* צמצום רווחים בין המותג, השם והתיאור */
+}
+
+/* עיצוב שם המותג */
+.wishlist-info .brand-name {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/* עיצוב שם המוצר המלא */
+.wishlist-info .full-product-name {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.2;
+}
+
+/* עיצוב התיאור */
+.wishlist-info .desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}
+
+.wishlist-info .price {
+  font-weight: bold;
+  margin-top: 4px;
+  color: #222;
+}
+
+.wishlist-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.add-to-cart {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0;
+  font-family: assistant;
+  transition: background 0.2s;
+}
+
+.add-to-cart:hover {
+  background-color: #333;
+}
+
+.remove-wishlist {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* הקטנת האייקון של ה-X */
+.remove-wishlist img {
+  width: 18px; /* הוקטן מ-24px */
+  height: 18px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.remove-wishlist img:hover {
+  opacity: 1;
+}
+
+.wishlist-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center; /* מרכז את כפתור החזרה */
+}
+
+.back-to-store {
+  background-color: black;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 0;
+  transition: background-color 0.3s;
+}
+
+.back-to-store:hover {
+  background-color: #333;
+}

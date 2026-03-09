@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.banner-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+
+.home-container {
+  font-family: assistant;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.about-us {
+  text-align: center;
+  padding: 20px;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-us p {
+  margin: 0 auto;
+  color: #555;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+  justify-items: center;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.wishlist-icon-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.wishlist-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.wishlist-icon:hover {
+  opacity: 1;
+}
+
+.product-img {
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+  background-color: white;
+}
+
+.product-info {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.product-info h4.brand-name {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.product-info h3.product-name {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-info .desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.product-info .price {
+  font-weight: bold;
+  color: #222;
+  margin-top: 5px;
+}
+
+.product-card button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  height: 40px;
+  font-size: 1.2rem;
+  font-family: assistant;
+  border: none;
+  border-radius: 0 0 12px 12px;
+}
+
+.product-card button:hover {
+  background-color: #7d7d7d;
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px 0;
+  }
+}

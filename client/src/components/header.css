@@ -1,0 +1,52 @@
+/* --- Header Container --- */
+.header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  transition: height 0.3s ease;
+}
+
+.bio {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #eee;
+  font-family: 'Assistant', sans-serif;
+}
+
+/* --- התאמה לנייד (Mobile Responsiveness) --- */
+@media (max-width: 480px) {
+  .header {
+    padding: 15px 10px;
+    min-height: 80px; /* גובה קטן יותר כדי להשאיר מקום לתוכן */
+  }
+
+  .logo-img {
+    height: 45px;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+    max-width: 90%;
+    line-height: 1.2;
+  }
+}

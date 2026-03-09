@@ -1,0 +1,96 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #fff;
+  font-family: 'Assistant', sans-serif;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.login-form h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.login-form button {
+  font-family: 'Assistant', sans-serif !important;
+  width: 100%;
+  padding: 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+
+}
+
+.login-form button:hover {
+  background-color: #333;
+}
+
+.login-form .register-link {
+  margin-top: 20px;
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: none;
+}
+
+.login-form .register-link:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.toggle-text {
+  margin-top: 20px;
+  cursor: pointer;
+  color: #666;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.toggle-text:hover {
+  color: #000;
+}
+
+.login-form input {
+  margin-bottom: 12px;
+}
